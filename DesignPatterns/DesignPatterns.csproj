@@ -47,6 +47,12 @@
     <Compile Include="C01\CompanyTax.cs" />
     <Compile Include="C01\ITax.cs" />
     <Compile Include="C01\PersonalIncomeTax.cs" />
+    <Compile Include="C01\Sample01\BankAccount.cs" />
+    <Compile Include="C01\Sample01\ConservativeInvestment.cs" />
+    <Compile Include="C01\Sample01\FearlessInvestment.cs" />
+    <Compile Include="C01\Sample01\IInvestment.cs" />
+    <Compile Include="C01\Sample01\InvestmentCalculator.cs" />
+    <Compile Include="C01\Sample01\ModerateInvestment.cs" />
     <Compile Include="C01\TaxCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
