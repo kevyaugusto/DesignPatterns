@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C01\Budget.cs" />
+    <Compile Include="C01\CompanyTax.cs" />
+    <Compile Include="C01\ITax.cs" />
+    <Compile Include="C01\PersonalIncomeTax.cs" />
+    <Compile Include="C01\TaxCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
