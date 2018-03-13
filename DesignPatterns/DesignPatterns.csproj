@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C02\Budget.cs" />
+    <Compile Include="C02\BudgetItem.cs" />
+    <Compile Include="C02\DiscountCalculator.cs" />
+    <Compile Include="C02\FiveHundredDollarsDiscount.cs" />
+    <Compile Include="C02\FiveItemsDiscount.cs" />
+    <Compile Include="C02\IDiscount.cs" />
+    <Compile Include="C02\NoDiscount.cs" />
     <Compile Include="C01\Budget.cs" />
     <Compile Include="C01\CompanyTax.cs" />
     <Compile Include="C01\ITax.cs" />
@@ -59,6 +66,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C01\README.txt" />
+    <Content Include="C02\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
