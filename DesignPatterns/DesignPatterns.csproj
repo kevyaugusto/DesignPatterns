@@ -61,6 +61,14 @@
     <Compile Include="C01\Sample01\InvestmentCalculator.cs" />
     <Compile Include="C01\Sample01\ModerateInvestment.cs" />
     <Compile Include="C01\TaxCalculator.cs" />
+    <Compile Include="C02\Sample01\BankAccount.cs" />
+    <Compile Include="C02\Sample01\ClientRequest.cs" />
+    <Compile Include="C02\Sample01\ClientRequestFormat.cs" />
+    <Compile Include="C02\Sample01\ClientResponseCSV.cs" />
+    <Compile Include="C02\Sample01\ClientResponseNoFormat.cs" />
+    <Compile Include="C02\Sample01\ClientResponsePercent.cs" />
+    <Compile Include="C02\Sample01\ClientResponseXML.cs" />
+    <Compile Include="C02\Sample01\IClientResponse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

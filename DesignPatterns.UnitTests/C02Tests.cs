@@ -67,6 +67,62 @@ namespace DesignPatterns.UnitTests
 
             Assert.AreEqual(expectedValue, initialBudgetValue - discountApplied);
         }
-        
+
+        [TestMethod]
+        public void C02TestClientRequestFormatCSV()
+        {
+            var clientRequestFormat = C02.Sample01.ClientRequestFormat.CSV;
+
+            var csvClientRequest = new C02.Sample01.ClientRequest(clientRequestFormat);
+
+            var processedRequestResult = csvClientRequest.ProcessRequest(new C02.Sample01.BankAccount("Kevy Augusto", 100));
+
+            var expectedValue = Enum.GetName(typeof(C02.Sample01.ClientRequestFormat), clientRequestFormat);
+
+            Assert.AreEqual(expectedValue, processedRequestResult);
+        }
+
+        [TestMethod]
+        public void C02TestClientRequestFormatXML()
+        {
+            var clientRequestFormat = C02.Sample01.ClientRequestFormat.XML;
+
+            var xmlClientRequest = new C02.Sample01.ClientRequest(clientRequestFormat);
+
+            var processedRequestResult = xmlClientRequest.ProcessRequest(new C02.Sample01.BankAccount("Kevy Augusto", 100));
+
+            var expectedValue = Enum.GetName(typeof(C02.Sample01.ClientRequestFormat), clientRequestFormat);
+
+            Assert.AreEqual(expectedValue, processedRequestResult);
+        }
+
+        [TestMethod]
+        public void C02TestClientRequestFormatPercent()
+        {
+            var clientRequestFormat = C02.Sample01.ClientRequestFormat.PERCENT;
+
+            var percentClientRequest = new C02.Sample01.ClientRequest(clientRequestFormat);
+
+            var processedRequestResult = percentClientRequest.ProcessRequest(new C02.Sample01.BankAccount("Kevy Augusto", 100));
+
+            var expectedValue = Enum.GetName(typeof(C02.Sample01.ClientRequestFormat), clientRequestFormat);
+
+            Assert.AreEqual(expectedValue, processedRequestResult);
+        }
+
+        [TestMethod]
+        public void C02TestClientRequestFormatNoFormat()
+        {
+            var clientRequestFormat = C02.Sample01.ClientRequestFormat.NOFORMAT;
+
+            var noFormatClientRequest = new C02.Sample01.ClientRequest(clientRequestFormat);
+
+            var processedRequestResult = noFormatClientRequest.ProcessRequest(new C02.Sample01.BankAccount("Kevy Augusto", 100));
+
+            var expectedValue = Enum.GetName(typeof(C02.Sample01.ClientRequestFormat), clientRequestFormat);
+
+            Assert.IsTrue(!string.IsNullOrEmpty(processedRequestResult) && processedRequestResult.Contains(expectedValue));
+        }
+
     }
 }
